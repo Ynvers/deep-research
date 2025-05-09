@@ -1,4 +1,8 @@
+import os
+#from dotenv import load_dotenv
 from deepsearch import DeepSearch
+
+#load_dotenv()
 
 def main():
     agent = DeepSearch()
@@ -8,7 +12,7 @@ def main():
     print("Type 'exit' or 'quit' to end the conversation.")
     
     while True:
-        user_question = input("> User: ")
+        user_question = input("> User: ").strip()
         if user_question.lower() in ["exit", "quit"]:
             print("Exiting the Deep Search Agent. Goodbye!")
             break
@@ -18,4 +22,5 @@ def main():
 
 
 if __name__ == "__main__":
+    #print("MISTRAL_API_KEY =", os.environ.get("MISTRAL_API_KEY"))
     main()

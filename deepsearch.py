@@ -1,4 +1,4 @@
-from themis import Themis
+from agents.themis import Themis
 
 
 class DeepSearch:
