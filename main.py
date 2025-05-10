@@ -22,5 +22,4 @@ def main():
 
 
 if __name__ == "__main__":
-    #print("MISTRAL_API_KEY =", os.environ.get("MISTRAL_API_KEY"))
     main()
